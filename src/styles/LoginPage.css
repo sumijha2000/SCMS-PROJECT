@@ -1,0 +1,97 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://images.pexels.com/photos/3094799/pexels-photo-3094799.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 100%;
+}
+
+.login-title {
+  margin-bottom: 20px;
+}
+
+.role-selection {
+  margin-bottom: 20px;
+}
+
+.role-btn {
+  background: transparent;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.role-btn.active {
+  background: #007bff;
+  color: white;
+}
+
+.role-icon {
+  margin-right: 8px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-group {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-eye {
+  font-size: 18px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.login-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+

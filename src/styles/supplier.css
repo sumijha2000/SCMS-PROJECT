@@ -1,0 +1,41 @@
+/* Supplier Panel Styles */
+.supplier-panel-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.supplier-content-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.supplier-main-content {
+  flex: 1;
+  padding: 100px;
+  background-color: #f4f4f4;
+  padding-left: 400px;
+}
+
+.supplier-dashboard-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.dashboard-summary {
+  margin-bottom: 20px;
+}
+
+.charts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.chart-container {
+
+}
+
+.chart-container > * {
+  height: 100%; /* Ensures chart fills the container height */
+}

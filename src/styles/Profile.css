@@ -1,0 +1,162 @@
+.profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.profile-container {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex: 1;
+  align-items: flex-start;
+}
+
+.profile-image-container {
+  flex-shrink: 0;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.profile-details p {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.edit-button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.profile-edit-form-container {
+  flex: 1;
+  max-width: 400px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.profile-form input[type="text"],
+.profile-form input[type="email"],
+.profile-form input[type="file"] {
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+}
+
+.profile-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.save-button {
+  background-color: #28a745;
+}
+
+.save-button:hover {
+  background-color: #218838;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+}
+
+.cancel-button:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile-edit-form-container {
+    max-width: 100%;
+  }
+
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-details p {
+    font-size: 14px;
+  }
+
+  .edit-button {
+    margin-top: 15px;
+    padding: 10px 15px;
+  }
+
+  .profile-form button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

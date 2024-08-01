@@ -1,0 +1,103 @@
+/* CreateProfileManager.css */
+
+/* Container Styles */
+.create-profile-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-area {
+  display: flex;
+  flex: 1;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+}
+
+.profile-form-section {
+  flex: 1;
+  padding: 5rem;
+  background-color: #f9f9f9;
+  padding-left: 400px; /* Adjust for sidebar or navigation if necessary */
+  transition: padding-left 0.3s ease; /* Smooth transition for padding adjustment */
+}
+
+.form-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center; /* Center align the heading */
+}
+
+.profile-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .profile-form-section {
+    padding-left: 20px; /* Reduce padding on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-form-section {
+    padding-left: 0; /* Remove left padding on small screens */
+  }
+
+  .profile-form {
+    padding: 1rem;
+  }
+
+  .form-heading {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .form-heading {
+    font-size: 1.25rem; /* Further adjust font size for very small screens */
+  }
+
+  .submit-button {
+    font-size: 0.875rem; /* Smaller button text on very small screens */
+  }
+}

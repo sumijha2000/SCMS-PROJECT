@@ -1,0 +1,31 @@
+/* mapStyles.css */
+
+/* Style for the map container */
+.map-container {
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    position: relative; /* Ensure positioning context */
+  }
+  
+  /* Style for the map itself */
+  .leaflet-container {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Style for the map markers */
+  .leaflet-marker-icon {
+    border-radius: 50%;
+    border: 2px solid #ff5722; /* Custom border color */
+  }
+  
+  /* Custom popup style */
+  .leaflet-popup-content {
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text color */
+    font-size: 14px; /* Font size for text */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding inside popup */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  }
+  

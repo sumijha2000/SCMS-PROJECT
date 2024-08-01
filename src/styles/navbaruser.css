@@ -1,0 +1,103 @@
+/* navbar.css */
+
+.navbar {
+  background-color: #377fcc; /* Blue background for the Navbar */
+  color: #ffffff; /* White text color for contrast */
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 250px; /* Width of Sidebar */
+  width: calc(100% - 250px); /* Adjust width to account for Sidebar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure Navbar is above other content */
+}
+
+/* Title styling */
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #ffffff; /* White text color for title */
+  font-weight: bold; /* Bold font for emphasis */
+}
+
+/* Profile section styling */
+.navbar .profile {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navbar .profile .profile-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #ffffff; /* White icon color */
+}
+
+.navbar .profile .profile-text {
+  margin-right: 15px;
+  font-size: 18px;
+  color: #ffffff; /* White text color for profile text */
+  font-weight: 500; /* Medium weight for profile text */
+}
+
+/* Dropdown menu styling */
+.navbar .profile .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff; /* White background for dropdown */
+  color: #333333; /* Dark text color for better readability */
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 1000; /* Ensure dropdown is above other content */
+}
+
+/* Show dropdown on profile hover */
+.navbar .profile:hover .dropdown {
+  display: block;
+}
+
+.navbar .profile .dropdown a {
+  display: block;
+  padding: 8px 12px;
+  color: #377fcc; /* Blue text color for links */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar .profile .dropdown a:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  border-radius: 4px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    left: 0;
+    width: 100%;
+    padding: 10px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .navbar .profile .profile-text {
+    display: none; /* Hide the profile text on smaller screens */
+  }
+
+  .navbar .profile .profile-icon {
+    font-size: 20px; /* Adjust icon size for smaller screens */
+  }
+
+  .navbar .profile .dropdown {
+    top: 100%;
+    right: 0;
+    width: 150px; /* Adjust dropdown width for smaller screens */
+  }
+
+  .navbar .profile .dropdown a {
+    font-size: 14px; /* Adjust font size for dropdown links */
+  }
+}

@@ -1,0 +1,62 @@
+/* TransactionHistoryManager.css */
+
+.transaction-history-manager-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-grow: 1;
+}
+
+.transaction-history-manager-main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.transaction-history-manager-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-history-manager-container h2 {
+  margin-bottom: 20px;
+}
+
+.transaction-history-manager-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-history-manager-table th,
+.transaction-history-manager-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-history-manager-table th {
+  background-color: #f0f0f0;
+}
+
+.transaction-history-manager-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  .transaction-history-manager-container {
+    padding: 10px;
+  }
+
+  .transaction-history-manager-table {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,165 @@
+/* ManagerTable.css */
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow: auto; /* Ensure content does not overflow */
+}
+
+.manager-table-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.manager-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.manager-table th, .manager-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.manager-table th {
+  background-color: #f4f4f4;
+}
+
+.manager-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.edit-button, .delete-button {
+  border: none;
+  padding: 8px 12px;
+  margin-right: 8px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #4caf50;
+}
+
+.delete-button {
+  background-color: #f44336;
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+}
+
+.delete-button:hover {
+  background-color: #e53935;
+}
+
+.edit-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form h3 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .manager-table-container {
+    padding: 10px;
+  }
+
+  .manager-table {
+    font-size: 14px;
+  }
+
+  .manager-table th, .manager-table td {
+    padding: 8px;
+  }
+
+  .edit-form {
+    padding: 15px;
+  }
+
+  .form-group input {
+    font-size: 14px;
+  }
+
+  .form-group button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .manager-table-container {
+    padding: 10px;
+  }
+
+  .manager-table {
+    font-size: 12px;
+  }
+
+  .manager-table th, .manager-table td {
+    padding: 6px;
+  }
+
+  .edit-form {
+    padding: 10px;
+  }
+
+  .form-group input {
+    font-size: 12px;
+  }
+
+  .form-group button {
+    font-size: 12px;
+  }
+}

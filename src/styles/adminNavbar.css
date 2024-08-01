@@ -1,0 +1,97 @@
+/* adminNavbar.css */
+
+.admin-navbar-container {
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.admin-navbar-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-navbar-title {
+  display: flex;
+  align-items: center;
+}
+
+.admin-dashboard-icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.admin-title-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.admin-navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.admin-navbar-item {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.admin-navbar-item:hover {
+  text-decoration: underline;
+}
+
+.admin-profile-menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.admin-profile-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.admin-profile-name {
+  font-size: 16px;
+}
+
+.admin-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  color: #2a2a2a;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.admin-dropdown-menu.open {
+  display: flex;
+}
+
+.admin-dropdown-item {
+  padding: 10px 20px;
+  color: #2a2a2a;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.admin-dropdown-item:hover {
+  background-color: #f1f1f1;
+}

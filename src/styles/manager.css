@@ -1,0 +1,45 @@
+/* Manager Panel Styles */
+.manager-panel-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.manager-content-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.dashboard-main-content {
+  flex: 1;
+  padding: 100px;
+  background-color: #f4f4f4;
+  padding-left: 400px;
+}
+
+.dashboard-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.dashboard-summary {
+  margin-bottom: 20px;
+}
+
+.charts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.chart-container {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 8px;
+  
+}
+
+.chart-container > * {
+  height: 100%; /* Ensures chart fills the container height */
+}

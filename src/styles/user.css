@@ -1,0 +1,45 @@
+.profile-management,
+.product-management,
+.order-management,
+.tracking-and-transactions {
+  padding: 20px;
+}
+
+.profile-management h2,
+.product-management h2,
+.order-management h2,
+.tracking-and-transactions h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input, select {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}

@@ -1,0 +1,168 @@
+/* adminSidebar.css */
+
+.admin-sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #2a2a2a;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: width 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-sidebar.collapsed {
+  width: 80px;
+}
+
+.admin-sidebar.light {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.admin-sidebar.dark {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.admin-sidebar-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 50px; /* Adjust top positioning as needed */
+  right: 15px; /* Adjust right positioning as needed */
+  z-index: 1000; /* Ensure the button is above other elements */
+}
+
+.admin-sidebar-header {
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid #444;
+  margin-top: 60px; /* Ensure the title is positioned below the toggle button */
+}
+
+.admin-sidebar-title {
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.admin-sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1; /* Ensure the menu takes up available space */
+}
+
+.admin-sidebar-item {
+  width: 100%;
+}
+
+.admin-sidebar-link,
+.admin-sidebar-dropdown {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.admin-sidebar-icon {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.admin-sidebar-text {
+  white-space: nowrap;
+}
+
+.admin-sidebar-dropdown .admin-sidebar-icon {
+  margin-right: 10px;
+}
+
+.admin-sidebar-dropdown .admin-sidebar-icon,
+.admin-sidebar-dropdown .admin-sidebar-text,
+.admin-sidebar-dropdown .admin-dropdown-toggle {
+  margin-right: 10px;
+}
+
+.admin-sidebar-submenu {
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+  background-color: #3a3a3a27;
+}
+
+.admin-sidebar-subitem {
+  width: 100%;
+}
+
+.admin-sidebar-sublink {
+  display: block;
+  padding: 10px 15px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.admin-sidebar-footer {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #444; /* Add border-top to separate footer */
+  margin-top: auto; /* Push footer to the bottom of the sidebar */
+}
+
+.admin-sidebar-mode-toggle,
+.admin-sidebar-logout {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.admin-mode-icon {
+  margin-right: 10px;
+}
+
+.admin-logout-icon {
+  margin-right: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.admin-sidebar-mode-toggle:hover
+{
+  background-color: grey;
+}
+.admin-sidebar-toggle:hover
+{
+  background-color: grey;
+}
+.admin-sidebar-logout:hover
+{
+  background-color: grey;
+}
+.admin-sidebar-dropdown:hover
+{
+  background-color: grey;
+}

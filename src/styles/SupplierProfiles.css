@@ -1,0 +1,76 @@
+/* General styles for the page */
+.supplier-profile-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .supplier-profile-main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .supplier-profile-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Heading styles */
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Table styles */
+  .supplier-profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .supplier-profile-table th, .supplier-profile-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .supplier-profile-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  /* Image styles */
+  .supplier-profile-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  /* Button styles */
+  .supplier-profile-delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .supplier-profile-delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Additional styling for table rows and cells */
+  tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  

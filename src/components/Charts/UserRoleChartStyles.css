@@ -1,0 +1,27 @@
+
+  /* Style the buttons */
+  .chart-button {
+    background: linear-gradient(rgb(118, 170, 238), rgb(201, 109, 124)); /* Primary blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 10px; /* Larger padding */
+    margin: 5px; /* Space between buttons */
+    cursor: pointer;
+    font-size: 1.1rem; /* Slightly larger font size */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Change button color on hover */
+  .chart-button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  /* Change button color when active */
+  .chart-button:active {
+    background-color: #003d7a; /* Even darker blue */
+    transform: scale(0.95); /* Slight shrink effect */
+  }
+  

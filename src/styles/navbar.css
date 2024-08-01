@@ -1,0 +1,177 @@
+/* Base styles for navbar */
+.navbar-container {
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2c3e50; /* Background color for navbar */
+  position: relative; /* Ensures dropdowns are positioned relative to navbar */
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar-title {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.title-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.navbar-item {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1rem;
+  position: relative;
+}
+
+.navbar-item:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  bottom: -4px;
+  left: 0;
+}
+
+.profile-menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.profile-name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #2c2f33;
+  border: 1px solid #23272a;
+  border-radius: 0.25rem;
+  display: none;
+  flex-direction: column;
+}
+
+.dropdown-menu.open {
+  display: flex;
+}
+
+.dropdown-item {
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-item:hover {
+  background-color: #3b3e42;
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and larger phones */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0.5rem;
+  }
+
+  .navbar-content {
+    flex-direction: column;
+  }
+
+  .navbar-links {
+    display: none; /* Hide links on smaller screens */
+    width: 100%;
+    margin: 0;
+  }
+
+  .navbar-item {
+    margin: 0.5rem 0;
+  }
+
+  .profile-menu {
+    margin-top: 0.5rem;
+  }
+
+  .dropdown-menu {
+    top: 50px; /* Adjust dropdown position if necessary */
+    right: 0;
+    width: 100%; /* Make dropdown full-width on small screens */
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+
+  .navbar-title {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: center; /* Center title on mobile */
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-item {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+
+  .profile-menu {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .profile-icon {
+    margin-right: 0.25rem;
+  }
+
+  .profile-name {
+    font-size: 0.9rem;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    top: 100%;
+    right: 0;
+  }
+}

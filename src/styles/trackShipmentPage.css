@@ -1,0 +1,92 @@
+/* Track Shipment Page Styling */
+.track-shipment-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Wrapper for content and sidebar */
+.track-shipment-content-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+/* Main content area */
+.track-shipment-main-content {
+  flex: 1;
+  padding: 5rem;
+  background-color: #f4f4f4;
+  margin-left: 400px;
+}
+
+/* Container for the form */
+.track-shipment-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Title styling */
+.track-shipment-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #007bff; /* Blue color for title */
+}
+
+/* Form styling */
+.track-shipment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Input field styling */
+.track-shipment-input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Select field styling */
+.track-shipment-select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Button styling */
+.track-shipment-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* Green background */
+  color: #fff; /* White text */
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.track-shipment-button:hover {
+  background-color: #218838; /* Darker green on hover */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.track-shipment-button:active {
+  background-color: #1e7e34; /* Even darker green on active */
+}
+
+/* Add additional styles for responsive design if needed */
+@media (max-width: 768px) {
+  .track-shipment-container {
+    padding: 15px;
+  }
+
+  .track-shipment-input, .track-shipment-select {
+    font-size: 16px;
+  }
+}

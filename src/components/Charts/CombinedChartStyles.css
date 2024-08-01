@@ -1,0 +1,69 @@
+/* Style the chart container */
+.chart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Pronounced shadow */
+  }
+  
+  /* Style the chart title */
+  .chart-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333333; /* Darker text color */
+    font-weight: bold;
+    font-family: 'Arial', sans-serif; /* Clean font */
+  }
+  
+  /* Style the chart wrapper */
+  .chart-wrapper {
+    margin: 0 auto;
+    max-width: 100%;
+    height: 400px; /* Set a height for the chart */
+  }
+  
+  /* Style the loading and error messages */
+  .loading-text, .error-text {
+    font-size: 1.2rem;
+    color: #ff4c4c; /* Red color for error messages */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Style the chart controls section */
+  .chart-controls {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  /* Style the buttons */
+  .chart-button {
+    background-color: #007bff; /* Primary blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px 24px; /* Larger padding */
+    margin: 5px; /* Space between buttons */
+    cursor: pointer;
+    font-size: 1.1rem; /* Slightly larger font size */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Change button color on hover */
+  .chart-button:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  /* Change button color when active */
+  .chart-button:active {
+    background-color: #003d7a; /* Even darker blue */
+    transform: scale(0.95); /* Slight shrink effect */
+  }
+  
